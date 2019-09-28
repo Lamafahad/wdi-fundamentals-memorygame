@@ -44,7 +44,7 @@ function createBoard(){
     cardElement.setAttribute('data-id', i);
     cardElement.addEventListener('click', flipCard);
     document.getElementById('game-board').appendChild(cardElement);
-      // Logic here
+  
   }
 
 }
@@ -65,14 +65,5 @@ const cardId = this.getAttribute('data-id');
       checkForMatch();
     }
   };
-
-/* function createBoard()
-  for (var i = 0; i < cards.length; i++)
-    var cardElement = document.createElement('img');
-    cardElement.setAttribute('src', 'images/back.png');
-    cardElement.setAttribute('data-game-board', cards[i]);
-    cardElement.addEventListener('click' , flipCard );
-    document.getElementById('game-board').appendChild(cardElement);
- */
 
 createBoard();
